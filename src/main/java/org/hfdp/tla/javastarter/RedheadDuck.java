@@ -1,8 +1,13 @@
 package org.hfdp.tla.javastarter;
 
 public class RedheadDuck extends Duck {
+    RedheadDuck() {
+        quackBehavior = new Quack();
+        flyBehavior = new FlyWithWings();
+    }
+
     @Override
-    public void display() {
-        System.out.println("Display Redhead Duck");
+    void display() {
+        System.out.println("Looks like a redhead duck");
     }
 }

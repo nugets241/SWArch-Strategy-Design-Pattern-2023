@@ -1,9 +1,14 @@
 package org.hfdp.tla.javastarter;
 
-public class MallardDuck extends Duck{
+public class MallardDuck extends Duck {
+
+    MallardDuck() {
+        quackBehavior = new Quack();
+        flyBehavior = new FlyWithWings();
+    }
 
     @Override
-    public void display() {
-        System.out.println("Display Mallard Duck");
+    void display() {
+        System.out.println("Looks like a mallard duck");
     }
 }
