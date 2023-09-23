@@ -2,15 +2,14 @@ package org.hfdp.tla.javastarter;
 
 public abstract class Duck {
 
-    QuackBehavior quackBehavior;
     FlyBehavior flyBehavior;
 
-    void performQuack() {
-        quackBehavior.quack();
+    void quack() {
+        System.out.println("Quack");
     }
 
     void performFly() {
-        flyBehavior.fly();
+        flyBehavior.fly();  // Delegating fly behavior
     }
 
     void swim() {
@@ -22,26 +21,10 @@ public abstract class Duck {
     void setFlyBehavior(FlyBehavior fb) {
         flyBehavior = fb;
     }
-
-    void setQuackBehavior(QuackBehavior qb) {
-        quackBehavior = qb;
-    }
 }
 
 interface QuackBehavior {
     void quack();
-}
-
-class Quack implements QuackBehavior {
-    public void quack() {
-        System.out.println("Quack");
-    }
-}
-
-class Squeak implements QuackBehavior {
-    public void quack() {
-        System.out.println("Squeak");
-    }
 }
 
 interface FlyBehavior {

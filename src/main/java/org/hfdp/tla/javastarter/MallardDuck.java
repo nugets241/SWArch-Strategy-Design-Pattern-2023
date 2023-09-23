@@ -3,7 +3,6 @@ package org.hfdp.tla.javastarter;
 public class MallardDuck extends Duck {
 
     MallardDuck() {
-        quackBehavior = new Quack();
         flyBehavior = new FlyWithWings();
     }
 
