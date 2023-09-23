@@ -1,18 +1,21 @@
 package org.hfdp.tla.javastarter;
-
 public abstract class Duck {
+
+    FlyBehavior flyBehavior;
+    QuackBehavior quackBehavior;
+
+    public void performFly() {
+        flyBehavior.fly();
+    }
+
+    public void performQuack() {
+        quackBehavior.quack();
+    }
 
     public void swim() {
         System.out.println("Swim");
     }
 
-    public void quack() {
-        System.out.println("Quack");
-    }
-
-    public void fly() {
-        System.out.println("Fly");
-    }
-
     public abstract void display();
 }
+
