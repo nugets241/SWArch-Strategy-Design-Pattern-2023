@@ -23,10 +23,6 @@ public abstract class Duck {
     }
 }
 
-interface QuackBehavior {
-    void quack();
-}
-
 interface FlyBehavior {
     void fly();
 }
