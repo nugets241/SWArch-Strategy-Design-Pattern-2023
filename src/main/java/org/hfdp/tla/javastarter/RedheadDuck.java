@@ -7,6 +7,6 @@ public class RedheadDuck extends Duck {
     }
 
     void display() {
-        System.out.println("Looks like a redhead duck");
+        System.out.println("I'm a redhead duck");
     }
 }

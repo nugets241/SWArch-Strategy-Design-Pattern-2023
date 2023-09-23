@@ -14,7 +14,7 @@ public abstract class Duck {
     }
 
     void swim() {
-        System.out.println("Swim");
+        System.out.println("All ducks float, even decoys!");
     }
 
     abstract void display();
@@ -44,18 +44,30 @@ class Squeak implements QuackBehavior {
     }
 }
 
+class MuteQuack implements QuackBehavior {
+    public void quack() {
+        System.out.println("<< Silent >>");
+    }
+}
+
 interface FlyBehavior {
     void fly();
 }
 
 class FlyWithWings implements FlyBehavior {
     public void fly() {
-        System.out.println("Fly with wings");
+        System.out.println("I'm flying!!");
     }
 }
 
 class FlyNoWay implements FlyBehavior {
     public void fly() {
-        // Do nothing - can't fly!
+        System.out.println("I can't fly");
+    }
+}
+
+class FlyRocketPowered implements FlyBehavior {
+    public void fly() {
+        System.out.println("I 'm flying with a rocket!");
     }
 }

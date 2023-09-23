@@ -7,7 +7,7 @@ public class RubberDuck extends Duck {
     }
 
     void display() {
-        System.out.println("Looks like a rubber duck");
+        System.out.println("I'm a rubber duck");
     }
 }
 
