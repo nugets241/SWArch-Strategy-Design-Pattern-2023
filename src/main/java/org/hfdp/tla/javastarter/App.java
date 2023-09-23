@@ -21,5 +21,10 @@ public class App
         redhead.fly();
         redhead.display();
 
+        RubberDuck rubberDuck = new RubberDuck();
+        rubberDuck.swim();
+        rubberDuck.quack();
+        rubberDuck.fly();
+        rubberDuck.display();
     }
 }
