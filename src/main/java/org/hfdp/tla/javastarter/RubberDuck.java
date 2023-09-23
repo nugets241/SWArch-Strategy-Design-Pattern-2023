@@ -2,12 +2,8 @@ package org.hfdp.tla.javastarter;
 
 public class RubberDuck extends Duck {
     RubberDuck() {
-        flyBehavior = new FlyNoWay();  // Rubber ducks can't fly
-    }
-
-    @Override
-    void quack() {
-        System.out.println("Squeak");  // Rubber ducks squeak instead of quack
+        quackBehavior = new Squeak();
+        flyBehavior = new FlyNoWay();
     }
 
     void display() {
