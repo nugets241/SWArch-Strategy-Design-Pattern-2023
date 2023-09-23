@@ -1,13 +1,14 @@
 package org.hfdp.tla.javastarter;
 
-public abstract class  Duck {
+public abstract class Duck {
 
-    public String swim (){
-        return "I can swim";
+    public void swim() {
+        System.out.println("Swim");
     }
 
-    public String quack () {
-        return "Duck Quacks";
+    public void quack() {
+        System.out.println("Quack");
     }
-    abstract String display();
+
+    public abstract void display();
 }

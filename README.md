@@ -1,5 +1,24 @@
 # HF Strategy Pattern - Ducks
 
+## Task
+
+Begin with a simple “hello world” Java program with Maven project structure.
+Implement the “Duck” example code from the course book by proceeding step by step. Follow the steps in the course book.
+
+The required steps are:
+
+1.0-Initial project startup. No functionality
+
+2.0-AdHoc, straight forward solution
+
+2.2 Added fly() behaviour and RubberDuck.
+
+3.0 First implementation of Strategy Pattern
+
+3.2 Strategy pattern with dynamic behaviour assignment
+
+
+
 ## Running the code
 
 The "main" main() function is in App.java.
@@ -18,6 +37,9 @@ java -cp target/java-starter-tla-1.0-SNAPSHOT.jar org.hfdp.tla...
 ````
 
 # References
+## Task
+*https://docs.google.com/document/d/e/2PACX-1vT6WvbSxFLbHBzWiwt2YAG7dyqd88c2tSX4lNK6pRBWEF8aqixOHjbtNNxkDfQSfMJyad7H5hf4U9Hn/pub
+
 ## Book
 * https://learning.oreilly.com/library/view/head-first-design/9781492077992
 * https://andor.tuni.fi/permalink/358FIN_TAMPO/1j3mh4m/alma9911189474705973 
